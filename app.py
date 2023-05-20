@@ -1,4 +1,4 @@
-from flask import Flask, url_for
+from flask import Flask, flash, url_for
 from flask import render_template
 from flask import request, redirect,Response
 from flask_sqlalchemy import SQLAlchemy
@@ -18,6 +18,8 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm 
 from wtforms import StringField, PasswordField, BooleanField
 from wtforms.validators import InputRequired, Email, Length
+# from wtforms.validators import InputRequired, Email, Length
+
 #from celery import Celery
 #from flask_celery import make_celery
 import io
@@ -223,7 +225,7 @@ def signup():
             db.session.commit()
             #mailsignup.delay(form.email.data,form.username.data)
             return redirect(url_for('login1'))
-            return redirect('/done')
+            # return redirect('/done')
         else:
             return 'Sorry the username already exist'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
