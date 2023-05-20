@@ -18,14 +18,7 @@
     <link rel="stylesheet" href={{ url_for('static', filename='css/style-switcher.css' ) }}>
     <link rel="stylesheet" href={{ url_for('static', filename='css/Skins/color-1.css' ) }} class="alternate-style"
         title="color-1">
-    <link rel="stylesheet" href={{ url_for('static', filename='css/Skins/color-2.css' ) }} class="alternate-style"
-        title="color-2" disabled>
-    <link rel="stylesheet" href={{ url_for('static', filename='css/Skins/color-3.css' ) }} class="alternate-style"
-        title="color-3" disabled>
-    <link rel="stylesheet" href={{ url_for('static', filename='css/Skins/color-4.css' ) }} class="alternate-style"
-        title="color-4" disabled>
-    <link rel="stylesheet" href={{ url_for('static', filename='css/Skins/color-5.css' ) }} class="alternate-style"
-        title="color-5" disabled>
+
 
 </head>
 
@@ -36,7 +29,8 @@
         <!-- Aside Start  -->
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>S</span>avor</a>
+                <!-- <a href="#"><span>S</span>avor</a> -->
+                <img src={{ url_for('static', filename='Images/Nav_logo.png') }} alt="">
             </div>
             <div class="nav-toggler">
                 <span></span>
@@ -47,11 +41,11 @@
                 <li><a href="#shop"><i class="fa fa-shop"></i> Shop</a></li>
                 <li><a href="#add-items"><i class="fa fa-list"></i> Add Items</a></li>
                 <li><a href="#donate"><i class="fa fa-hands"></i> Donate</a></li>
-                <li><a href="#chat"><i class="fa fa-comments"></i> Chat</a></li>
+                <!-- <li><a href="#chat"><i class="fa fa-comments"></i> Chat</a></li> -->
                 <li><a href="#developer"><i class="fa fa-users"></i> Developers</a></li>
                 <li><a href="#Profile"><i class="fa fa-user"></i> Profile</a></li>
-                <li><a href=""></a></li>
-                <li><a href="/logout"><i class="fa fa-user"></i> Logout</a></li>
+                <!-- <li><a href=""></a></li> -->
+                <!-- <li><a href="/logout"><i class="fa fa-user"></i> Logout</a></li> -->
 
             </ul>
         </div>
@@ -65,7 +59,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2 style="font-size:28px;">Wecome to ExpiroSavor {{name}}</h2>
+                            <h2 style="font-size:28px;">Welcome {{name}}</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -690,25 +684,6 @@
 
     </div>
     <!-- Main Container Ends -->
-
-    <!-- Style Switcher Start -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
-        </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1') "></span>
-            <span class="color-2" onclick="setActiveStyle('color-2') "></span>
-            <span class="color-3" onclick="setActiveStyle('color-3') "></span>
-            <span class="color-4" onclick="setActiveStyle('color-4') "></span>
-            <span class="color-5" onclick="setActiveStyle('color-5') "></span>
-        </div>
-    </div>
-    <!-- Style Switcher Ends -->
 
     <!-- Javascript files  -->
     <script src={{ url_for('static', filename='js/script.js' ) }}></script>
