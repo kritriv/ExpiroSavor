@@ -42,7 +42,7 @@
                 <li><a href="#add-items"><i class="fa fa-list"></i> Add Items</a></li>
                 <li><a href="#donate"><i class="fa fa-hands"></i> Donate</a></li>
                 <!-- <li><a href="#chat"><i class="fa fa-comments"></i> Chat</a></li> -->
-                <li><a href="#developer"><i class="fa fa-users"></i> Developers</a></li>
+                <li><a href="#Ngo"><i class="fa fa-users"></i> Nearest NGO's</a></li>
                 <li><a href="#Profile"><i class="fa fa-user"></i> Profile</a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
@@ -124,11 +124,11 @@
                             </div>
 
 
-                            <h2 style="margin-top:30px ;margin-left:10% ;">
+                            <h3 style="margin-top:30px ;margin-left:10% ;font-weight: 400;">
                                 {% if recentlyadded|length!=0 %}
-                                Recently added items</h2>
+                                Recently added items</h3>
                             {% else %}
-                            No items added kindly add the items</h2>
+                            No items added kindly add the items</h3>
                             {% endif %}
 
                             <div class="row">
@@ -164,65 +164,15 @@
                                         </div>
                                         {% endfor %}
 
-
-
-
-
-
-
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- <div class="row">
-                                <div class="certificate ">
-                                    <div class="row">
-                                        <div class="timeline-box ">
-                                            <div class="timeline">
-                                                <!-- timeline-item  -->
-                            <!--<div class="timeline-button"
-                                                    style="display:inline-block; margin-left: 10%;">
-                                                    <div>
-                                                        <h4 class="timeline-title" style="text-align: center;">Add Your
-                                                            Items here
-                                                        </h4>
-                                                    </div>
-                                                    <div><img src="Images/2.jpg" width="200px" height="150px"
-                                                            alt="Pic-1"></div>
-                                                    <div style="text-align: center;"></div>
-                                                    <a href="#Profile" class="btn-view">Add Items</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="timeline-box ">
-                                            <div class="timeline ">
-                                                <!-- timeline-item  -->
-                            <!--<div class="timeline-button"
-                                                    style="display:inline-block; margin-left: 10%; ">
-                                                    <div>
-                                                        <h4 class="timeline-title" style="text-align: center;">Donate
-                                                            Items here
-                                                        </h4>
-                                                    </div>
-                                                    <div><img src="Images/2.jpg" width="200px" height="150px"
-                                                            alt="Pic-1"></div>
-                                                    <div style="text-align: center;"><a href="#"
-                                                            class="btn-view">Donate</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
 
                     </div>
                 </div>
             </section>
-            <!-- Home Section End  -->
-            <!-- About  Section Start  -->
             <section class="about section" id="shop">
                 <div class="container">
                     <div class="row">
@@ -287,22 +237,12 @@
                             <h2>Add Items</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- -----Services Items Start----  -->
-                        <!-- <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Upload an Image</h4>
-                            </div>
-                        </div> -->
-                        <!-- -----Services Items End----  -->
-                    </div>
+                
 
                     <div class="row">
                         <form method="POST" action="/item-added" enctype=multipart/form-data>
                             <div class="contact-form padd-15">
+                                
                                 <form method="POST" action="/login" class="contact-form padd-15"></form>
                                 <div class="row">
                                     <div class="service-item padd-15">
@@ -482,11 +422,11 @@
                 </div>
             </section>
             <!--Contact  Section Start  -->
-            <section class="contact section" id="developer">
+            <section class="contact section" id="Ngo">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
+                            <h2>Contact Nearest NGO's</h2>
                         </div>
                     </div>
 
@@ -535,8 +475,8 @@
                                 </div>
                               </div>
                   
-                              <h2>Prakhar<br>Bansal</h2>
-                              <h3>BackEnd & Software Developer</h3>
+                              <h2>Vanshika<br>Sharma</h2>
+                              <h3>UI/UX & Software Developer</h3>
                             </div>
                   
                             <ul class = "icons">
@@ -693,18 +633,6 @@
     <script src={{ url_for('static', filename='js/style-switcher.js' ) }}></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
         referrerpolicy="no-referrer"></script>
-    <!-- Typing Animation -->
-    <script>
-        var typed = new Typed('.animate-typing', {
-            strings: ["Web Developer",
-                " Web Designer",
-                "Graphics Designer",
-                "Programmer"],
-            typeSpeed: 50,
-            BackSpeed: 30,
-            loop: true
-        })
-    </script>
 
 </body>
 
