@@ -184,6 +184,7 @@ ul {
 .aside .logo {
     position: absolute;
     top: 20px;
+    left: 50px;
     font-size: 30px;
     text-transform: capitalize;
 }
@@ -191,7 +192,7 @@ ul {
 .aside .logo img{
     padding: 15px 20px;
     position: relative;
-    width: 90%;
+    width: 80%;
 }
 
 .aside .logo a span {
@@ -228,7 +229,7 @@ ul {
     cursor: pointer;
     position: fixed;
     left: 300px;
-    top: 20px;
+    /* top: 20px; */
     border-radius: 5px;
     background: var(--bg-black-100);
     display: none;
