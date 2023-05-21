@@ -1005,7 +1005,7 @@ h3.my-profession {
     height: 100vh;
 }
 .about-left{
-    background: #f26a8d;
+    background: #FF574A;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1013,7 +1013,7 @@ h3.my-profession {
     height: 100vh;
 }
 .about-left-content > div{
-    background: #f49cbb;
+    background: #FF574A;
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
 }
@@ -1083,7 +1083,7 @@ h3.my-profession {
 }
 .icons li{
     list-style-type: none;
-    background: #f36a8d;
+    background: #FF574A;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -1115,7 +1115,7 @@ h3.my-profession {
     text-transform: uppercase;
 }
 .about-right h1 span{
-    color: #dd2d4a;
+    color: #FF574A;
 }
 .about-right h2{
     font-weight: 600;
@@ -1139,22 +1139,22 @@ h3.my-profession {
 }
 */
 .btn.btn-pink{
-    background: #dd2d4a;
+    background: #FF574A;
     color: #fff;
-    border-color: #dd2d4a;
+    border-color: #FF574A;
     transition: all 0.5s ease-in-out;
 }
 .btn.btn-pink:hover{
     background: transparent;
-    border-color: #dd2d4a;
+    border-color: #FF574A;
     color: #000;
 }
 .btn.btn-white{
     transition: all 0.5s ease-in-out;
 }
 .btn.btn-white:hover{
-    background: #dd2d4a;
-    border-color: #dd2d4a;
+    background: #FF574A;
+    border-color: #FF574A;
     color: #fff;
 }
 .about-para p{
